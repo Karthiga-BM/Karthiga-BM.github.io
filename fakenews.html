@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Karthiga BM Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Karthiga BM</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Main Page</a></li>
+							<li class="active"><a href="shiny.html">Project Page</a></li>
+							<li><a href="index.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/karthiga-bm-3840b516a" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Karthiga-BM" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Fake News Detector using Python</h1>
+									<p>Train and test a machine learning model whic identifies fake and real news</p>
+									
+								</header>
+								<div class="image main"><img src="images/pjimage.jpg" alt="" /></div>
+								<p>The ability to distinguish between reliable news stories and deliberate hoaxes or sarcastic news has become increasingly important with the spread of such information over social media networks. Big tech and social media companies are particularly interested in the reliability of content being disseminated on their platforms. These platforms would ideally like to be able to detect and flag articles suspected of being so-called “fake news” automatically.
+
+This aproject  train and test a fake news detector using machine learning techniques. The dataset being used for the task is from the recently compiled and released open dataset described in this paper. This particular dataset contains headlines only: decisions about the legitimacy of the news articles must be based on the headline alone.
+
+In the description below, I suggest some Python packages and tools that you can use to complete certain tasks. If you use another programming language for the project you will need to find appropriate replacements.
+
+Preprocessing
+The first stage in the pipeline is to preprocess and clean the dataset. 
+
+Training and test splits
+The very first thing that you will need to do is split the data into training and test sets. Write a Python script to perform the split: 75% of the data for training and the remainder for test. Take appropriate measures to ensure that the test set is not biased in any way. Store the resulting training and test sets in files using any convenient data format that you like. Collect and record statistics on the resulting training and test sets including total numbers of real and fake news headlines in each set. 
+
+If you plan to use a validation set (as opposed to cross validation) for model selection, this would be a good time to split off the validation set too. 
+
+Feature extraction
+The second part of preprocessing will be to extract the features you will need for the remainder of the analysis. You may revisit this stage many times as you become more familiar with the dataset and the kinds of features that may be useful for the classification task.  You may want to start by using a bag-of-words model here to transform the documents into a fixed length representation suitable for classification. The sklearn.feature_extraction.text package may be useful here. 
+
+The features you choose will affect the performance of the final classifier, and there are many possibilities (e.g. stop word removal, TF-IDF encoding, infrequent word removal, etc.). Choose something you think is reasonable to start with and later you can experiment with alternatives on the validation set.
+
+Exploratory data analysis
+Use the training section of the dataset to perform some exploratory data analysis. The goal at this stage is to become accustomed with the data and gain insights into the kinds of features that may be useful for classification. 
+
+Consider carefully which subset of the data should be used for exploratory analysis.
+
+Find the top-20 most frequently used words in real and fake headlines and use a bar plot to show their relative frequencies. What can you say about these words? What changes when stop words are removed?
+
+Compare the distribution of headline lengths in real and fake headlines using appropriate plots (e.g. a boxplot). Are fake headlines usually shorter or longer? Document all your findings and any other interesting observations that you can find.
+
+Supervised classification
+Train a supervised classification model on your features and calculate validation accuracy either on a hold-out validation set or using cross-validation. Record the final accuracy of the classifier. How many of the headlines are correctly classified by the model? How many are misclassified? Investigate the kinds of errors that are being made (e.g. using the sklearn.metrics package). Document all findings. Save the model to the disk (e.g. using the Python pickle module).
+
+Model selection
+Select multiple candidate models that you want to compare. This could include different classifiers (e.g. naive Bayes (MultinomialNB), logistic regression, SVMs, etc.), different hyperparameters, or different sets of features. Use a validation set or cross-validation to compare the accuracy of different models. Create plots to compare a subset of the models that you investigated during model selection. Retain the most effective model for evaluation. 
+
+It is important that you do a reasonably thorough investigation of different alternatives in this section.
+
+Model evaluation
+Estimate the out-of-sample error for the model that you found to be most accurate during model selection by evaluating it on the held-out test set. Use the sklearn.metrics package (or similar) to benchmark the model in several ways. Create an ROC plot for the model. Compute the model's AUC metric. Generate the confusion matrix for the model on the test set. Comment on the implications of the resulting confusion matrix for a real production classifier.</p>
+								<h3>What did the project acheive?</h3>
+								<ul>
+									<li>Made use of multiple data exploratory packages in Python</li>
+									<li>Illustrated multiple insights using bar graphs and histograms</li>
+									<li>Gained insights from plots created in Python</li>
+                  <li>Insights about the behaviourial pattern of fake news</li>
+                  <li>Sentimentiment Analysis on fake and real news</li>
+								</ul>
+								<ul class="actions special">
+									<!--li><a href="shiny.html" class="button">See Details</a></li-->
+									<li><a href="https://github.com/Karthiga-BM/Data_Analysis_And_Machine_Learning_Projects/tree/master/venv/Scripts/Fake%20News%20Detection%20Python%20Project" class="button">Github Link</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!--section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>-->
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>North Dublin, Ireland</p>
+							</section>
+							<!--section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>-->
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:karthiga.easwar16@gmail.com">karthiga.easwar16@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/karthiga-bm-3840b516a" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/Karthiga-BM" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>									
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
